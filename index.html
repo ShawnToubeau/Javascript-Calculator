@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="style.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/2.6.0/math.min.js">
+  </script>
+  <script src="javascript.js"></script>
+</head>
+
+<body>
+  <div id="calc">
+    <div id="display">
+      <p id="answer"></p>
+    </div>
+
+    <div id="col-1">
+      <button onclick="addChar(this)" value="7">7</button>
+      <button onclick="addChar(this)" value="8">8</button>
+      <button onclick="addChar(this)" value="9">9</button>
+
+      <button onclick="addChar(this)" value="4">4</button>
+      <button onclick="addChar(this)" value="5">5</button>
+      <button onclick="addChar(this)" value="6">6</button>
+
+      <button onclick="addChar(this)" value="1">1</button>
+      <button onclick="addChar(this)" value="2">2</button>
+      <button onclick="addChar(this)" value="3">3</button>
+
+      <button onclick="addChar(this)" value=".">.</button>
+      <button onclick="addChar(this)" value="0">0</button>
+      <button onclick="evaluate()" value="=">=</button>
+    </div>
+
+    <div id="col-2">
+      <button onclick="del()" class="btn-small" value="del">Del</button>
+      <button onclick="addChar(this)" class="btn-small" value="/">&divide;</button>
+      <button onclick="addChar(this)" class="btn-small" value="*">x</button>
+      <button onclick="addChar(this)" class="btn-small" value="-">-</button>
+      <button onclick="addChar(this)" class="btn-small" value="+">+</button>
+    </div>
+  </div>
+</body>
+
+</html>
